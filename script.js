@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
             const astronauts = document.getElementsByTagName("title");
             const container = document.getElementById("container");
             let index = 0;
-            container.addEventListener("click", function(){
+            astronauts.addEventListener("click", function(){
                container.innerHTML = `
                <div class="astronaut">
                     <div class ="bio">
@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
                     </div>
                 </div>
                 `;
-                index = (index+1) % json.length
+                //index = (index+1) % json.length
                         
             });
         });
